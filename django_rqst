@@ -4,7 +4,6 @@ from django_rq import job, get_queue
 
 @job
 def trigger_event(**kwargs):
-    print(f"Hello, {kwargs['name']}! You are {kwargs['age']} years old.")
     return f"Hello, {kwargs['name']}!"
 
 
